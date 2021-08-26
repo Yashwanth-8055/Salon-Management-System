@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Salon{% endblock %}
+
+{% block content %}
+
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <strong>OFFER!</strong> Get gift cards worth Rs.500 on your First Booking.
+</div>
+
+ <div class="marquee">
+     <h2><p><strong>Welcome!!! Thank You for opting EasyBarber </strong></p></h2>
+</div>
+
+<div class="EasyBarb">
+<h1> EasyBarber</h1>
+</div>
+<div class="imglogo"><img src="{% static 'EasyBarber/Logo.jpg' %}" alt="Logo"></div>
+<div id="name">
+    <p><strong><h2>A website that books your barber</h2></strong></p>
+</div>
+<br>
+<br>
+<br>
+
+<div id="menu">
+<ul>
+    <li><a href="{% url 'about' %}" target="_blank">About Us</a></li>
+    <li><a href="{% url 'fcs' %}" style="margin-left:20px">Customer SignUp</a></li>
+    <li><a href="{% url 'fos' %}" style="margin-left:20px" >Owner SignUp</a></li>
+    <li><a href="http://127.0.0.1:8000/admin/" style="margin-left:20px" target="_blank" >Barber Registration</a></li>
+    <li><a href="{% url 'login' %}" style="margin-left:20px" target="_blank">Login</a></li>
+    <li><a href="{% url 'store' %}" style="margin-left:20px" target="_blank">Salon Shops</h4></a></li>
+    <li><a href="{% url 'schedule' %}" style="margin-left:20px" target="_blank">Book Appointment</a></li>
+    <li><a href="{% url 'reviews' %}" style="margin-left:20px" target="_blank">Reviews</a></li>
+    <li><a href="{% url 'logout' %}" style="margin-left:20px" target="_blank">Logout</a></li>
+
+</ul>
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="box">
+<div class="quotes">
+    <p>"Your Hair is Your Best Accessory</p>
+    <p>AND</p>
+    <p>We Groom It The Best"</p>
+</div>
+</div>
+
+
+{% endblock %}
